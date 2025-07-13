@@ -1,0 +1,47 @@
+Arrays:-
+
+- one dimensional representation:
+int[] arr = {1,2,3};
+
+* Length of array = arr.Length
+
+- more Reepresentations:0
+int intArray[];
+Long[] longArray;
+Double doubleArray[];
+
+
+To link var-name Array with the actual, physical array of a particular type, we must allocate one new and assign it to var-name reference variable.
+Dog[] myDog = new Dog[5];
+myDog.Length;
+
+
+- Passing and Returning Arrays:-
+- Like variables we can also pass ararys to methods
+int myarr = {3,1,2,5,4};
+sym(myarr); //passing array to method sum()
+
+public static void sum(int[] arr){...} //definition of method
+
+- As usual a method can also return an array 
+public static int[] m1() {return new int[] {1,2,3};}
+...
+int arr[] = m1(); //returned array is accessed from another method
+
+The array class objects
+- Every array has an associated Class object, shared with all the arrays with the same componenet ype
+
+Note : The string "[l" is the run-time type signature for the object "array with component type int"; Similarly, the string ___ is the run-time type signature for the class object [B is Boolean type.
+[L" is array with component type of a Class
+The only direct super class of an array type is java.lang.Object;
+
+clone() -> used to copy objects. // Also called deep copy (as opposed to shallow copy where the new variable only refers to the old object)
+
+int cloneArray[] = intArray.clone();
+
+Multidimensional arrays:-
+*only have dynamic declaration.
+int[][]arr = {{2,7,9},{3,6,1},{7,4,2}};
+
+data_type twoD[][] = new data_type[num_rows][num_columns];
+int twoD[][] = new int[4][5];
